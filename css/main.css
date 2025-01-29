@@ -1,9 +1,15 @@
 body {
   font-family: 'Roboto', Helvetica, sans-serif;
-  background-color: grey;
-  margin: 0;
+  background-color: #FFE5EC;
+  margin-right: 10%;
+  margin-left: 10%;
   padding: 0;
 }
+
+.banner {
+  padding-top: 2rem;
+}
+
 
 h1,
 h2,
@@ -12,6 +18,7 @@ h4,
 h5,
 h6 {
   font-family: 'Stick No Bills', 'Roboto', Helvetica, sans-serif;
+  font-size: 2rem;
 }
 
 .container {
@@ -24,12 +31,14 @@ img {
   width: 100%;
 }
 
+
 .main-nav ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  border-bottom: 3px solid black;
 }
 
 .main-nav ul li {
@@ -69,3 +78,4 @@ form button {
 .site-footer {
   padding: 2rem 0;
 }
+
