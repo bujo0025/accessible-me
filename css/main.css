@@ -18,6 +18,11 @@ main {
   width: 100%;;
 }
 
+main {
+  margin-right: 15%;
+  margin-left: 15%;
+}
+
 .skip-link {
   background: black;
   color: #fff;
