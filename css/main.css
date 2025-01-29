@@ -1,8 +1,8 @@
 body {
   font-family: 'Roboto', Helvetica, sans-serif;
   background-color: #FFE5EC;
-  margin-right: 10%;
-  margin-left: 10%;
+  margin-right: 5%;
+  margin-left: 5%;
   padding: 0;
 }
 
@@ -11,8 +11,8 @@ body {
 }
 
 main {
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .skip-link {
