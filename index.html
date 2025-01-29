@@ -12,85 +12,78 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
-
-  <header role="banner">
-  <div class="container">
-    <a href="#main-content" class="skip-link">Skip to main content</a>
+<body itemscope itemtype="https://schema.org/WebPage">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
     <a href="#contact-section" class="skip-nav">Skip to contact section</a>
+
+  <header role="banner" itemscope itemtype="https://schema.org/WPHeader">
+  <div class="container">
     <div class="site-header">
-      <h1 role="heading">Jam Box Studios</h1>
-      <div class="main-nav" role="navigation">
+      <h1 itemprop="name" role="heading">Jam Box Studios</h1>
+
+      <nav class="main-nav" role="navigation" itemscope itemtype="https://schema.org/BreadcrumbList">
         <ul role="list">
-          <li role="listitem"><a role="link" href="#">Home</a></li>
-          <li role="listitem"><a role="link" href="#">Products</a></li>
-          <li role="listitem"><a role="link" href="#">Reservation</a></li>
-          <li role="listitem"><a role="link" href="#">Studio</a></li>
+          <li role="listitem" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" role="link" href="#"><span itemprop="name">Home</span></a><meta itemprop="position" content="1" />
+          </li>
+          <li role="listitem" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" role="link" href="#"><span itemprop="name">Products</span></a><meta itemprop="position" content="2" />
+          </li>
+          <li role="listitem" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" role="link" href="#"><span itemprop="name">Reservation</span></a><meta itemprop="position" content="3" />
+          </li>
+          <li role="listitem" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" role="link" href="#"><span itemprop="name">Studio</span></a><meta itemprop="position" content="4" />
+          </li>
         </ul>
-      </div>
+      </nav>
     </div>
     <img role="img" src="https://picsum.photos/1200/900" class="banner" alt="generated image from picsum.com">
   </header>
 
-    <main role="main" id="main-content">
+    <main role="main" id="main-content" itemscope itemtype="https://schema.org/WebPageElement">
     <div class="main-content" role="region">
-      <h2 role="heading">Welcome to Jam Box</h2>
-      <p role="paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio quia veritatis.</p>
-      <p role="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
-      <div class="owner" role="complementary">
+      <h2 role="heading" itemprop="headline">Welcome to Jam Box</h2>
+      <p role="paragraph" itemprop="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio quia veritatis.</p>
+      <p role="paragraph" itemprop="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
+
+      <div class="owner" role="complementary" itemscope itemtype="https://schema.org/Person">
         <h3 role="heading">Meet the owner</h3>
-        <ul role="list" itemscope itemtype="https://schema.org/Person">
+        <ul role="list">
           <li role="listitem" itemprop="name">Name: John Doe</li>
           <li role="listitem" itemprop="jobTitle">Title: CEO</li>
           <li role="listitem" itemprop="email">Email: johnjoe@jambox.ca</li>
           <li role="listitem" itemprop="telephone">Phone: 613-000-0000</li>
         </ul>
         <h4 role="heading">Address</h4>
-        <ul>
-        <li role="paragraph" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Jambox Studios</span>
+        <p role="paragraph" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span itemprop="company">Jambox Studios</span>
           <span itemprop="streetAddress">123 Guitar Road,</span>
           <span itemprop="addressLocality">Musicville, Danceistan</span>
           <span itemprop="postalCode">B3T 0L0</span>
-        </ul>
+        </p>
       </div>
-      <div id="contact-section" class="contact-section" role="form">
+      <div id="contact-section" class="contact-section" role="form" itemscope itemtype="https://schema.org/ContactPoint">
         <h5 role="heading">Contact Us</h5>
         <form action="thanks.html">
-          <label>Full Name</label>
-          <input type="text" role="textbox" placeholder="Full Name">
-          <input type="text" role="textbox" placeholder="Email">
-          <input type="text" role="textbox" placeholder="Subject">
-          <b>Your Message</b>
-          <textarea role="textbox"></textarea>
+          <label for="fullname">Full Name</label>
+          <input type="text" role="textbox" placeholder="Full Name" id="fullname" itemprop="name">
+
+          <label for="email">Email</label>
+          <input type="text" role="textbox" placeholder="Email" id="email" itemprop="email">
+
+          <label for="subject">Subject</label>
+          <input type="text" role="textbox" placeholder="Subject" id="subject">
+
+          <label for="message"><b>Your Message</b></label>
+            <textarea id="message" role="textbox" itemprop="description"></textarea>
           <button role="button" type="submit">Send</button>
         </form>
       </div>
     </div>
   </main>
 
-  <footer role="contentinfo">
+  <footer role="contentinfo" itemscope itemtype="https://schema.org/WPFooter">
     <div class="site-footer">
-      &copy; 2021 Jam Box Studios
+      &copy; <span itemprop="copyrightYear">2021</span><span itemprop="copyrightHolder">Jam Box Studios</span>
     </div>
-  </div>
   </footer>
-
-  <!-- <style>
-    .skip-link {
-      position: absolute;
-      top: -40px;
-      left: 10px;
-      background: #000;
-      color: #fff;
-      padding: 10px;
-      z-index: 100;
-      text-decoration: none;
-    }
-
-    .skip-link:focus {
-      top: 10px;
-    } -->
     </style>
 </body>
 
