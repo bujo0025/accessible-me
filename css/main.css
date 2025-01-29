@@ -9,8 +9,13 @@ body {
   padding-top: 2rem;
 }
 
-.container {
-  width: 250%;
+main {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.site-header {
+  width: 100%;;
 }
 
 .skip-link {
