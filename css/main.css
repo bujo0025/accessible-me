@@ -1,18 +1,16 @@
 body {
   font-family: 'Roboto', Helvetica, sans-serif;
   background-color: #FFE5EC;
-  margin-right: 5%;
-  margin-left: 5%;
-  padding: 0;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .banner {
   padding-top: 2rem;
 }
 
-main {
-  margin-left: 5%;
-  margin-right: 5%;
+.container {
+  width: 250%;
 }
 
 .skip-link {
