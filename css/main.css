@@ -10,6 +10,42 @@ body {
   padding-top: 2rem;
 }
 
+.skip-link {
+  background: black;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0 0 0.25rem 0.25rem;
+  position: absolute;
+  left: 0.5rem;
+  transform: translateY(-175%);
+  transition: transform 350ms ease-in;
+}
+
+.skip-link:focus {
+  transform: translateY(0);  /* Moves it into view */
+}
+
+.skip-nav {
+  background: black;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0 0 0.25rem 0.25rem;
+  position: absolute;
+  left: 0.5rem;
+  transform: translateY(-175%);
+  transition: transform 350ms ease-in;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.skip-nav:focus {
+  transform: translateY(0);  /* Moves it into view */
+}
+
 
 h1,
 h2,
@@ -78,4 +114,3 @@ form button {
 .site-footer {
   padding: 2rem 0;
 }
-
